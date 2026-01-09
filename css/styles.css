@@ -173,6 +173,10 @@ gap: 40px;
         background: #404bbf;
 }
 
+.button-section:hover {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .features-section {
     padding: 120px 0;
 }
@@ -208,12 +212,10 @@ gap: 24px;
     border-radius: 4px;
     border: 1px solid #8e8f99;
     margin-bottom: 8px;
-    gap: 24px;
 }
 
 .features-item-icon-svg {
     fill: #2e2f42;
-    margin: 0 auto;
 }
 
 .features-subtitle {
@@ -284,28 +286,44 @@ background: #fff;
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
+    margin-bottom: 8px;
 }
 
 .team-social {
     display: flex;
     gap: 24px;
-    flex-shrink: 0;
-    align-self: flex-end;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: center;
 }
 
-.team-social .link {
+.team-social-item {
+    list-style: none;
+}
+
+.team-social-item .link {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40px;
     height: 40px;
+    background-color: #4D5AE5;
     border-radius: 50%;
+    text-decoration: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #fff;
 }
 
-.team-social .team-social-svg {
-    fill: #4d5ae5;
+.link:hover {
+    background-color: #404bbf;
 }
 
+.team-social-svg {
+    width: 16px;
+    height: 16px;
+    fill: #f4f4fd;
+}
 
 .portfolio-section{
     padding: 120px 0;
@@ -397,6 +415,12 @@ gap: 48px 24px;
     padding: 100px 0;
 }
 
+.footer-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 120px;
+}
+
 .footer-logo {
     margin: 16px 0;
     margin-right: 149px;
@@ -412,3 +436,48 @@ gap: 48px 24px;
     color: #f4f4fd;
 }
 
+.footer-subtitle {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #fff;
+margin: 16px 0;
+margin-right: 112px;
+}
+
+.footer-social-list {
+display: flex;
+gap: 16px;
+margin: 0;
+padding: 0;
+list-style: none;
+justify-content: center;
+}
+
+.footer-social-item {
+    list-style: none;
+}
+
+.footer-social-item .footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #fff;
+}
+
+.footer-social-link:hover {
+    background-color: #31D0AA;
+}
+
+.footer-social-svg {
+    width: 24px;
+    height: 24px;
+    fill: #f4f4fd;
+}
