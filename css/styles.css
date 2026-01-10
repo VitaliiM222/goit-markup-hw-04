@@ -416,10 +416,11 @@ gap: 48px 24px;
 .footer-container {
     display: flex;
     gap: 120px;
+    align-items: baseline;
 }
 
 .footer-logo {
-    margin: 16px 0;
+margin: 16px 0;
     margin-right: 149px;
     display: inline-block;
 }
